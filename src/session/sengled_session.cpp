@@ -18,10 +18,10 @@ sengled_session::sengled_session(bool persistance){
         else{
             // file exists / load it into the session
             std::ifstream input_file("src/persistance/persistant_session.json");
-            nlohmann::json session_update = nlohmann::json::parse(input_file);
+            nlohmann::json session_json = nlohmann::json::parse(input_file);
 
-            set_cookie(session_update["cookie"]);
-            set_last_login(session_update["last_login"]);
+            set_cookie(session_json["cookie"]);
+            set_last_login(session_json["last_login"]);
         }
     }
 }
