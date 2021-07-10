@@ -1,6 +1,6 @@
  {
     "username":"", 
     "password":"", 
-    "cookie":"", 
+    "cookie":"test_cookie", 
     "last_login": 0.0
 }
